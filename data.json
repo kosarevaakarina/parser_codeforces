@@ -1,0 +1,67 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$gi27ohvLl0rqjrQvWEyQfh$jsrRkn9msbzV9M18WsBmwnJ7ePsNWwpzTY4JUFqOsDE=",
+      "last_login": "2023-09-14T16:47:25.179Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-09-14T16:47:01.490Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "django_celery_beat.crontabschedule",
+    "pk": 1,
+    "fields": {
+      "minute": "0",
+      "hour": "*",
+      "day_of_week": "*",
+      "day_of_month": "*",
+      "month_of_year": "*",
+      "timezone": "Europe/Moscow"
+    }
+  },
+  {
+    "model": "django_celery_beat.periodictasks",
+    "pk": 1,
+    "fields": {
+      "last_update": "2023-09-14T16:49:36.768Z"
+    }
+  },
+  {
+    "model": "django_celery_beat.periodictask",
+    "pk": 1,
+    "fields": {
+      "name": "parser",
+      "task": "codeforces.tasks.parser_codeforces_task",
+      "interval": null,
+      "crontab": 1,
+      "solar": null,
+      "clocked": null,
+      "args": "[]",
+      "kwargs": "{}",
+      "queue": null,
+      "exchange": null,
+      "routing_key": null,
+      "headers": "{}",
+      "priority": null,
+      "expires": null,
+      "expire_seconds": null,
+      "one_off": false,
+      "start_time": null,
+      "enabled": true,
+      "last_run_at": null,
+      "total_run_count": 0,
+      "date_changed": "2023-09-14T16:49:36.765Z",
+      "description": ""
+    }
+  }
+]
