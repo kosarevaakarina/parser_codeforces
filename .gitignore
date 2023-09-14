@@ -1,3 +1,9 @@
 /venv
 .env
 .idea/
+codeforces/__pycache__/
+codeforces/management/__pycache__/
+codeforces/management/commands/__pycache__/
+codeforces/migrations/__pycache__/
+codeforces/telegram/__pycache__/
+config/__pycache__/
