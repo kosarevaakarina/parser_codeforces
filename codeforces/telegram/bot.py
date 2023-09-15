@@ -34,7 +34,7 @@ def send_rating(message):
 
 def rating(message):
     """Выводит пользователю задачи по введенному уровню сложности"""
-    data = get_tasks_with_rating(message.text.lower())
+    data = get_tasks_with_rating(message.text)
     empty = '<b>Список задач</b>:\n'
     if data == empty:
         bot.send_message(chat_id=message.chat.id, text='Задач с такой сложностью нет')
